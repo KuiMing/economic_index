@@ -37,7 +37,7 @@ def get_index_latest(response, pid):
     content.loc[content.economic.str.contains('coincident'), 'economic'] = 'coincident'
     content.loc[content.economic.str.contains('lagging'), 'economic'] = 'lagging'
     content.loc[content.economic.str.contains('leading'), 'economic'] = 'leading'
-    content['economic_index'] = content.content.str.extract('([0-9]*[0-9]+[0-9]+.[0-9]{1})')
+    content['economic_index'] = content.content.str.extract('([0-9]{2,3}\.[0-9]{1})')
     content = content.dropna().drop(columns='content').drop_duplicates()
     content['pid'] = pid
     return content
@@ -78,3 +78,4 @@ index_latest['base_year'] = index_latest.base_year.astype(int)
 index_latest['datetime'] = index_latest.datetime.astype(str)
 index_latest = index_latest[['base_year', 'datetime', 'economic', 'economic_index', 'pid', 'year_month']]
 index_latest.to_csv('economic_index_adjusted.csv', mode='a', index=False, header=False)
+index_latest.to_csv('economic_index.csv', mode='a', index=False, header=False)
