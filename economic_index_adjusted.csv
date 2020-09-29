@@ -650,3 +650,6 @@ base_year,datetime,economic,economic_index,pid,year_month
 2016,2020-07-01,leading,104.4,,202007
 2016,2020-07-01,coincident,99.2,,202007
 2016,2020-07-01,lagging,109.2,,202007
+2016,2020-08-01,leading,106.5,,202008
+2016,2020-08-01,coincident,100.8,,202008
+2016,2020-08-01,lagging,107.6,,202008
