@@ -79,7 +79,7 @@ headers = {
 }
 
 response = requests.request(
-    "GET", url, data=payload, headers=headers, params=querystring
+    "GET", url, data=payload, headers=headers, params=querystring, verify=False
 )
 
 index_latest = get_index_latest(response, "")
