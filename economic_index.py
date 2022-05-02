@@ -19,11 +19,11 @@ def get_base_year(x):
 
 def get_index_latest(response, pid):
     soup = BeautifulSoup(response.text, "html.parser")
-    content = soup.find_all("div", id="content")
+    content = soup.find_all("div", id="chConferences")
     content = content[0].find_all("p")
-    release = next(i.text for i in content if len(re.findall("Released", i.text)) > 0)
+    release = next(i.text for i in content if len(re.findall("Updated", i.text)) > 0)
     year_month = (
-        datetime.strptime(release.split(": ")[1].replace("</p>", ""), "%A, %B %d, %Y")
+        datetime.strptime(release.split(": ")[1].replace("</p>", ""), "%A, %B %d, %Y ")
         - relativedelta(months=1)
     ).strftime("%Y%m")
     cbi = []
@@ -54,9 +54,8 @@ def trans_datetime(x):
     return datetime.strptime(x, "%Y%m")
 
 
-url = "https://www.conference-board.org/data/bcicountry.cfm"
+url = "https://www.conference-board.org/topics/us-leading-indicators"
 
-querystring = {"cid": "1"}
 
 payload = ""
 headers = {
@@ -79,7 +78,7 @@ headers = {
 }
 
 response = requests.request(
-    "GET", url, data=payload, headers=headers, params=querystring, verify=False
+    "GET", url, data=payload, headers=headers, verify=False
 )
 
 index_latest = get_index_latest(response, "")
