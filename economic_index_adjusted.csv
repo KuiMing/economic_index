@@ -709,3 +709,6 @@ base_year,datetime,economic,economic_index,pid,year_month
 2016,2022-02-01,leading,119.9,,202202
 2016,2022-02-01,coincident,108.0,,202202
 2016,2022-02-01,lagging,110.3,,202202
+2016,2022-03-01,leading,119.8,,202203
+2016,2022-03-01,coincident,108.7,,202203
+2016,2022-03-01,lagging,110.9,,202203
