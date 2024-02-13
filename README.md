@@ -3,6 +3,7 @@
 ## Economic Index Plot
 https://kuiming.github.io/economic_index/economic_index.html
 
+![](economic_index.png)
 
 ## Leading Economic Index
 
@@ -10,7 +11,7 @@ https://kuiming.github.io/economic_index/economic_index.html
 - Rising: An increase in leading indicators usually suggests that future economic activity will rise. This could mean that the economy is entering an expansion phase, with increased business and consumer confidence, leading to higher investment and consumption.
 - Falling: A decrease in leading indicators may indicate a reduction in economic activity, suggesting potential risks of an economic downturn. This could lead to decreased business and consumer confidence and reduced investment and consumption.
 
-### Leadin Economic Index Components
+### Leading Economic Index Components
 - Average weekly hours in manufacturing;
 - Average weekly initial claims for unemployment insurance; 
 - Manufacturers’ new orders for consumer goods and materials; 
