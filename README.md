@@ -54,6 +54,39 @@ These are included among the data used to determine recessions in the US.
 - Change in Consumer Price Index for services.
 
 
+## Situation Combination
+
+
+| Leading | Coincident | Lagging | Implication |
+|---------|------------|---------|-------------|
+| Up      | Up         | Up      | Economic expansion, with both current and future trends positive. |
+| Up      | Up         | Flat    | The economy is growing, with past growth possibly having stabilized. |
+| Up      | Up         | Down    | Rapid economic growth, but previous growth might be weakening. |
+| Up      | Flat       | Up      | Positive future growth expectations, with current stability and good past performance. |
+| Up      | Flat       | Flat    | The future looks promising, with stable conditions both currently and in the past. |
+| Up      | Flat       | Down    | The future looks promising, but current stability might be a recovery from a past downturn. |
+| Up      | Down       | Up      | Despite short-term challenges, long-term growth expectations remain positive. |
+| Up      | Down       | Flat    | Economic pressure in the short term, but positive long-term expectations with past economic stability. |
+| Up      | Down       | Down    | Facing short-term challenges, although the long-term outlook is positive, current and past recession trends need to be overcome. |
+| Flat    | Up         | Up      | Good current and past economic conditions, but the future trend is unclear. |
+| Flat    | Up         | Flat    | Current economic growth with past stability, but the future direction is unclear. |
+| Flat    | Up         | Down    | Good current economic conditions, but the past may have experienced a downturn, making the future uncertain. |
+| Flat    | Flat       | Up      | Overall economic stability with an unclear future trend. |
+| Flat    | Flat       | Flat    | Overall economic stability, with little change expected in the future. |
+| Flat    | Flat       | Down    | Current stability, but the past may have seen a downturn, making the future uncertain. |
+| Flat    | Down       | Up      | Current challenges, but good past conditions, with an uncertain future. |
+| Flat    | Down       | Flat    | Current economic downturn with past stability, but an unclear future trend. |
+| Flat    | Down       | Down    | Poor performance currently and in the past, with an unclear future direction. |
+| Down    | Up         | Up      | Good current and past performance, but future challenges may arise. |
+| Down    | Up         | Flat    | Current economic growth with past stability, but the future might slow down. |
+| Down    | Up         | Down    | Good current economic conditions, but future growth might face challenges, with a possible slowdown already starting in the past. |
+| Down    | Flat       | Up      | Current stability and good past performance, but the future might slow down. |
+| Down    | Flat       | Flat    | Overall economic stability, but the future might slow down. |
+| Down    | Flat       | Down    | Current stability, but potential economic challenges ahead, both in the future and from the past. |
+| Down    | Down       | Up      | Current economic downturn, with potentially more difficult times ahead, despite good past performance. |
+| Down    | Down       | Flat    | Both current and future economic conditions appear poor, despite past stability. |
+| Down    | Down       | Down    | The economy might be in a recessionary phase, with all indicators showing a downward trend. |
+
 
 ## Reference
 
